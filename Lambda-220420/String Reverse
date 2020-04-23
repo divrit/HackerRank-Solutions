@@ -1,0 +1,10 @@
+interface in{
+	public String s(String d);
+}
+public class StringReverse {
+	public static void main(String [] args) {
+		in i=d->new StringBuilder(d).reverse().toString();
+		System.out.println(i.s("what are you saying"));
+	}
+
+}
