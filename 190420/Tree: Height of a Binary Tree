@@ -1,0 +1,35 @@
+
+
+	/*
+    class Node 
+    	int data;
+    	Node left;
+    	Node right;
+	*/
+	public static int height(Node root) {
+    int lcount=0;
+    int rcount=0;
+          
+        //   if(root==null)
+        //     return 0;
+              if(root.left!=null){
+               
+               lcount=1+ height(root.left);
+            }
+        if(root.right!=null){
+               
+                 rcount=1+height(root.right);
+            }
+           
+         
+if(lcount<rcount){
+    return rcount;
+}
+else{
+    return lcount;
+}
+ 
+
+   
+    }
+
