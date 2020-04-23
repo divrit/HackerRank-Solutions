@@ -1,0 +1,26 @@
+
+
+ /* Node is defined as :
+ class Node 
+    int data;
+    Node left;
+    Node right;
+    
+    */
+
+	public static Node insert(Node root,int data) {
+            Node n;
+    	if(root==null){
+           root=new Node(data);
+        }
+        else if(data>root.data){
+            n=insert(root.right,data);
+            root.right=n;
+        }
+        else if(data<root.data){
+           n=insert(root.left,data);
+            root.left=n;
+        }
+        return root;
+    }
+
