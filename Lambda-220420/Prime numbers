@@ -1,0 +1,21 @@
+import java.util.Scanner;
+@FunctionalInterface
+interface interf {
+	public boolean check(int a); 	
+}
+
+public class Prime {
+	public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in); 
+	int n=sc.nextInt();
+	
+	interf in=a->{
+	for(int i=2;i<=Math.sqrt(a);i++) {
+	if(a%i==0) 
+	return false;	
+	}
+	return true;
+	};
+	System.out.println(in.check(n));
+	}
+}
