@@ -1,0 +1,42 @@
+
+
+public class Solution {
+    // Write your code here.
+     char[] aq=new char[111];
+     char[] as=new char[111];
+      int i=0; int j=0;
+       int firstde=-1;
+       int lastst=i;
+  public void pushCharacter(char c){
+      
+    
+     
+          as[i]=c;
+           lastst=i;
+          i++;
+     
+  }
+  
+  public void enqueueCharacter(char c){
+     
+     
+    
+          aq[j]=c;
+          j++;
+     
+  }
+
+  public char popCharacter(){
+      if(lastst!=0){
+      
+      return as[lastst--];
+      }else return as[lastst];
+
+  }
+  public char dequeueCharacter(){
+    
+      firstde++;
+      return aq[firstde];
+
+  }
+
